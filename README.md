@@ -1,5 +1,7 @@
 # Meet-Events-App
 
+**An app for users to find events around them to enjoy**
+
 ## Feature 1 : filter events by city
 
 **User story:** as a user I should be able to filter events by city so I can target specific events depending on where I live
