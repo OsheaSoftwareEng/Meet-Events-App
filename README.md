@@ -4,7 +4,7 @@
 
 ## How this app uses serverless functions
 
-Anytime this app interacts with the Google Calender API to it will have to use serverless functions in order to serve the necessary data to the user. An example would be if the user wants to filter events it would trigger a serverless functions to interact with the API to display the data their requesting. Another example would be when a user wants to see the data from the API being displayed on a chart. This would also cause a serverless functions to occur resulting in the data being fetched and displayed on the graph.
+Anytime this app interacts with the Google Calender API, it will have to use serverless functions in order to serve the necessary data to the user. An example would be if the user wants to filter events it would trigger a serverless functions to interact with the API to display the data their requesting. Another example would be when a user wants to see the data from the API being displayed on a chart. This would also cause a serverless functions to occur resulting in the data being fetched and displayed on the graph.
 
 ## Feature 1 : filter events by city
 
