@@ -102,12 +102,3 @@ module.exports.getCalenderEvents = async (event) => {
       };
     });
 };
-
-//
-//     if (error) {
-//       return reject(error);
-//     } else {
-//       return resolve;
-//     }
-//   })
-// }
