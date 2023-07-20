@@ -4,7 +4,7 @@ import EventList from './components/EventList';
 import CitySearch from './components/CitySearch';
 import NumberOfEvents from './components/NumberOfEvents';
 
-export const App = () => {
+const App = () => {
   return (
     <div className='App'>
       <EventList />
@@ -13,3 +13,5 @@ export const App = () => {
     </div>
   );
 };
+
+export default App;
