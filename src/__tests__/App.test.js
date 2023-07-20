@@ -2,7 +2,6 @@
 
 import { render } from '@testing-library/react';
 import { App } from '../App';
-import { CitySearch } from '../components/CitySearch';
 
 describe('<App /> component', () => {
   let AppDOM;
@@ -15,5 +14,9 @@ describe('<App /> component', () => {
 
   test('render CitySearch', () => {
     expect(AppDOM.querySelector('#city-search')).toBeInTheDocument();
+  });
+
+  test('renders number of events component', () => {
+    expect(AppDOM.querySelector('#event-number'));
   });
 });
