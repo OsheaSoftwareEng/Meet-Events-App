@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export const CitySearch = ({ allLocations }) => {
+const CitySearch = ({ allLocations }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [query, setQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
@@ -50,3 +50,5 @@ export const CitySearch = ({ allLocations }) => {
     </div>
   );
 };
+
+export default CitySearch;
