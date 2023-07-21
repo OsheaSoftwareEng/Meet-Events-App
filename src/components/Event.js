@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import mockData from '../mock-date';
 
-const Event = () => {
+const Event = ({ event }) => {
   const [showDetails, setShowDetails] = useState(false);
-  const event = mockData;
+  //   const event = mockData;
 
   const toggleDetails = () => {
     setShowDetails(!showDetails);
@@ -12,11 +11,10 @@ const Event = () => {
   return (
     <>
       <li>
-        <p>{event[0].location}</p>
-        <p>{event[0].summary}</p>
-        <p>{event[0].created}</p>
-        {/* <p>{event[0].description}</p> */}
-        {showDetails ? <p>{event[0].description}</p> : null}
+        <p>{event.location}</p>
+        <p>{event.summary}</p>
+        <p>{event.created}</p>
+        {showDetails ? <p>{event.description}</p> : null}
       </li>
       <button onClick={toggleDetails} className='show-details'>
         Show Details
