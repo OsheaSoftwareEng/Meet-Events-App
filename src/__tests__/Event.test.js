@@ -6,6 +6,7 @@ import mockData from '../mock-date';
 
 const event = mockData;
 
+//tests
 describe('<Event /> component', () => {
   let EventComponent;
   beforeEach(() => {
