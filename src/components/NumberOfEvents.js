@@ -1,10 +1,13 @@
 import { useState } from 'react';
 
-const NumberOfEvents = () => {
-  const [eventNumber, setEventNumber] = useState(32);
+const NumberOfEvents = ({ setCurrentNOE }) => {
+  //   const [eventNumber, setEventNumber] = useState(32);
+  const [query, setQuery] = useState(32);
 
-  const handleInputChanged = (value) => {
-    setEventNumber(value);
+  const handleInputChanged = (event) => {
+    const inputValue = event.target.value;
+    setQuery(inputValue);
+    setCurrentNOE(inputValue);
   };
 
   return (
@@ -13,8 +16,8 @@ const NumberOfEvents = () => {
         type='text'
         className='textbox'
         placeholder='enter a number'
-        value={eventNumber}
-        onChange={(e) => handleInputChanged(e.target.value)}
+        value={query}
+        onChange={handleInputChanged}
       />
     </div>
   );
