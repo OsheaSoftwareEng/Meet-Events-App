@@ -10,15 +10,15 @@ const Event = ({ event }) => {
 
   return (
     <>
-      <li>
-        <p>{event.location}</p>
-        <p>{event.summary}</p>
-        <p>{event.created}</p>
-        {showDetails ? <p>{event.description}</p> : null}
+      <li className='event'>
+        <p className='location'>{event.location}</p>
+        <p className='summary'>{event.summary}</p>
+        <p className='created'>{event.created}</p>
+        {showDetails ? <p className='des-info'>{event.description}</p> : null}
+        <button onClick={toggleDetails} className='show-details details-btn'>
+          Show Details
+        </button>
       </li>
-      <button onClick={toggleDetails} className='show-details'>
-        Show Details
-      </button>
     </>
   );
 };
