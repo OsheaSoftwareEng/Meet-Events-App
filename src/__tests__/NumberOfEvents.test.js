@@ -26,7 +26,7 @@ describe('<NumberOfEvents /> component', () => {
 });
 
 describe('<NumberOfEvents /> integration', () => {
-  test('renders suggestions list when the app is rendered.', async () => {
+  test('renders a new number of events based on what the user types as a number.', async () => {
     const user = userEvent.setup();
     const AppComponent = render(<App />);
     const AppDOM = AppComponent.container.firstChild;
