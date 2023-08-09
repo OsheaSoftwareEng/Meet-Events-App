@@ -14,8 +14,16 @@ const Event = ({ event }) => {
         <p className='location'>{event.location}</p>
         <p className='summary'>{event.summary}</p>
         <p className='created'>{event.created}</p>
-        {showDetails ? <p className='des-info'>{event.description}</p> : null}
-        <button onClick={toggleDetails} className='show-details details-btn'>
+        {showDetails ? (
+          <p data-testid='event-details' className='des-info'>
+            {event.description}
+          </p>
+        ) : null}
+        <button
+          data-testid='details-btn'
+          onClick={toggleDetails}
+          className='show-details details-btn'
+        >
           Show Details
         </button>
       </li>
