@@ -1,13 +1,20 @@
 import { useState } from 'react';
 
-const NumberOfEvents = ({ setCurrentNOE }) => {
-  //   const [eventNumber, setEventNumber] = useState(32);
+const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
   const [query, setQuery] = useState(32);
 
   const handleInputChanged = (event) => {
     const inputValue = event.target.value;
     setQuery(inputValue);
     setCurrentNOE(inputValue);
+
+    let infoError;
+    if (isNaN(query)) {
+      infoError = 'you can only use positive numbers';
+    } else {
+      infoError = '';
+    }
+    setErrorAlert(infoError);
   };
 
   return (
