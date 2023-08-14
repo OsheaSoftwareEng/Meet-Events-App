@@ -19,7 +19,7 @@ defineFeature(feature, (test) => {
       AppComponent = render(<App />);
     });
 
-    then('the event elements will collapse', async () => {
+    then('the user should see the list of all upcoming events.', async () => {
       const AppDOM = AppComponent.container.firstChild;
       const EventListDOM = AppDOM.querySelector('#event-list');
 
