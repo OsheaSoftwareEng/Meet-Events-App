@@ -6,7 +6,9 @@ import App from '../App';
 describe('<NumberOfEvents /> component', () => {
   let EventNumber;
   beforeEach(() => {
-    EventNumber = render(<NumberOfEvents setCurrentNOE={() => {}} />);
+    EventNumber = render(
+      <NumberOfEvents setErrorAlert={() => {}} setCurrentNOE={() => {}} />
+    );
   });
 
   test('checking to see if the textbox is rendering correctly', () => {
