@@ -26,11 +26,11 @@ const App = () => {
   };
 
   useEffect(() => {
-    if (navigator.onLine) {
-      setWarningAlert('');
-    } else {
-      setWarningAlert('You are currently offline');
-    }
+    // if (navigator.onLine) {
+    //   setWarningAlert('');
+    // } else {
+    //   setWarningAlert('You are currently offline');
+    // }
     fetchData();
   }, [currentCity, currentNOE]);
 
