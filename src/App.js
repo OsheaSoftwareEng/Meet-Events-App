@@ -5,6 +5,9 @@ import CitySearch from './components/CitySearch';
 import NumberOfEvents from './components/NumberOfEvents';
 import { extractLocations, getEvents } from './api';
 import { ErrorAlert, InfoAlert, WarningAlert } from './components/Alert';
+import CityEventsChart from './components/CityEventsCharts';
+import EventsGenreChart from './components/EventsGenresChart';
+import logo from '../src/images/logo-no-background.png';
 
 const App = () => {
   const [allLocations, setAllLocations] = useState([]);
@@ -36,6 +39,7 @@ const App = () => {
 
   return (
     <div className='App'>
+      <img className='logo' src={logo}></img>
       <div className='alerts-container'>
         {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
         {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
@@ -50,6 +54,10 @@ const App = () => {
         setCurrentNOE={setCurrentNOE}
         setErrorAlert={setErrorAlert}
       />
+      <div className='charts-container'>
+        <EventsGenreChart events={events} />
+        <CityEventsChart allLocations={allLocations} events={events} />
+      </div>
       <EventList events={events} />
     </div>
   );
