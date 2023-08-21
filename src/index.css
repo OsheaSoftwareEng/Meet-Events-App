@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.logo {
+  width: 500px;
+  height: auto;
+  padding: 40px;
+}
+
+.city-label {
+  padding: 20px;
+  display: block;
+  margin: -10px;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+  }
+}
