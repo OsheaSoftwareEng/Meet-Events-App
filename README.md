@@ -1,6 +1,14 @@
 # Meet-Events-App
 
-**An app for users to find events around them to enjoy**
+**Link to project:** https://osheasoftwareeng.github.io/Meet-Events-App/ <br>
+
+![alt tag](https://imgur.com/N8lxMvQ.png)
+
+## How It's Made:
+
+**Tech used:** HTML5, CSS, JavaScript, React, Amazon Web Services
+
+**An app for users to find tech events around them to enjoy**
 
 ## How this app uses serverless functions
 
